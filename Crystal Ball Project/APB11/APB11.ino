@@ -9,13 +9,13 @@ int reply;
 void setup() {
   // put your setup code here, to run once:
   analogReference(DEFAULT);
-  
   Serial.begin(9600);
+  
   lcd.begin(16,2);
   pinMode(switchPin, INPUT);
-  lcd.write("Ask the");
+  lcd.print("Ask the");
   lcd.setCursor(0,1);
-  lcd.write("Crystal Ball");
+  lcd.print("Crystal Ball");
 }
 
 void loop() {
